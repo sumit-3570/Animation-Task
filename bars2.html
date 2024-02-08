@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bars2</title>
+	<style type="text/css">
+		* {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		main {
+			width: 600px;
+			height: 600px;
+			border: .1px solid red;
+			border-radius: 50%;
+			margin: 30px auto;
+			display: flex;
+			position: relative;
+			justify-content: space-around;
+			align-items: center;
+			background-color: black;
+		}
+
+		.box {
+			width: 40px;
+			height: 200px;
+			border: .1px solid black;
+			border-radius: 5px 5px 5px 5px;
+			position: absolute;
+		}
+
+		.box:nth-child(1) {
+			top: 199px;
+			left: 61px;
+			background-color: red;
+			animation: moving 1s linear 2s infinite alternate;
+		}
+
+		.box:nth-child(2) {
+			top: 199px;
+			left: 365px;
+			background-color: yellow;
+			animation: moving 1s linear 2.5s infinite alternate;
+		}
+
+		.box:nth-child(3) {
+			top: 199px;
+			left: 454px;
+			background-color: green;
+			animation: moving 1s linear 3s infinite alternate;
+		}
+
+		.box:nth-child(4) {
+			top: 199px;
+			left: 169px;
+			background-color: blue;
+			animation: moving 1s linear 3.6s infinite alternate;
+		}
+
+		.box:nth-child(5) {
+			top: 199px;
+			left: 271px;
+			background-color: cyan;
+			animation: moving 1s linear 4s infinite alternate;
+		}
+
+
+		@keyframes moving {
+
+			0% {
+				transform: scaleY(1);
+			}
+
+			50%{
+				transform: scaleY(0.2);
+			}
+
+			100% {
+				transform: scaleY(1.5);
+			}
+		}
+
+
+
+	</style>
+</head>
+<body>
+      <main>
+      	 <div class="box"></div>
+      	 <div class="box"></div>
+      	 <div class="box"></div>
+      	 <div class="box"></div>
+      	 <div class="box"></div>
+      </main>
+</body>
+</html>
